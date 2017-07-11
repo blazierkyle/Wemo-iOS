@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035639421C2371B800525300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035639411C2371B800525300 /* AppDelegate.swift */; };
+		25C37FFE1F144B9700142AE6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C37FFD1F144B9700142AE6 /* HomeTableViewController.swift */; };
+		25C380001F144B9E00142AE6 /* WemoDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C37FFF1F144B9E00142AE6 /* WemoDeviceCell.swift */; };
+		25C380021F144BB400142AE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380011F144BB400142AE6 /* SettingsViewController.swift */; };
+		25C380051F144BC100142AE6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380031F144BC100142AE6 /* LocationManager.swift */; };
+		25C380061F144BC100142AE6 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380041F144BC100142AE6 /* Utility.swift */; };
+		25C380081F144BCD00142AE6 /* WemoDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380071F144BCD00142AE6 /* WemoDevice.swift */; };
+		25C3800D1F144BDB00142AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C380091F144BDB00142AE6 /* Assets.xcassets */; };
+		25C3800E1F144BDB00142AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C3800B1F144BDB00142AE6 /* Main.storyboard */; };
+		25C3801C1F144BF200142AE6 /* MacAddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C380151F144BF200142AE6 /* MacAddressHelper.m */; };
+		25C3801D1F144BF200142AE6 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C380181F144BF200142AE6 /* SimplePing.m */; };
+		25C3801E1F144BF200142AE6 /* WemoConduit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380191F144BF200142AE6 /* WemoConduit.swift */; };
+		25C3801F1F144BF200142AE6 /* WemoScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3801A1F144BF200142AE6 /* WemoScanner.swift */; };
+		25C380201F144BF200142AE6 /* WemoScannerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3801B1F144BF200142AE6 /* WemoScannerRequest.swift */; };
+		25C380231F144C2400142AE6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380221F144C2400142AE6 /* UIViewController+Extensions.swift */; };
+		25C380251F144C2B00142AE6 /* SimulatedLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 25C380241F144C2B00142AE6 /* SimulatedLocation.gpx */; };
+		25C380291F144C3C00142AE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C380281F144C3C00142AE6 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0356393E1C2371B800525300 /* WeMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		035639411C2371B800525300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25C37FFD1F144B9700142AE6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = Home/Controller/HomeTableViewController.swift; sourceTree = "<group>"; };
+		25C37FFF1F144B9E00142AE6 /* WemoDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WemoDeviceCell.swift; path = Home/View/WemoDeviceCell.swift; sourceTree = "<group>"; };
+		25C380011F144BB400142AE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/Controller/SettingsViewController.swift; sourceTree = "<group>"; };
+		25C380031F144BC100142AE6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Managers/LocationManager.swift; sourceTree = "<group>"; };
+		25C380041F144BC100142AE6 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Managers/Utility.swift; sourceTree = "<group>"; };
+		25C380071F144BCD00142AE6 /* WemoDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WemoDevice.swift; path = "Supporting Files/Models/WemoDevice.swift"; sourceTree = "<group>"; };
+		25C3800A1F144BDB00142AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Base; path = "Supporting Files/Base.lproj/Assets.xcassets"; sourceTree = "<group>"; };
+		25C3800C1F144BDB00142AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		25C380111F144BF200142AE6 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		25C380121F144BF200142AE6 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		25C380131F144BF200142AE6 /* if_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_types.h; sourceTree = "<group>"; };
+		25C380141F144BF200142AE6 /* MacAddressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddressHelper.h; sourceTree = "<group>"; };
+		25C380151F144BF200142AE6 /* MacAddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddressHelper.m; sourceTree = "<group>"; };
+		25C380161F144BF200142AE6 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		25C380171F144BF200142AE6 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		25C380181F144BF200142AE6 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		25C380191F144BF200142AE6 /* WemoConduit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WemoConduit.swift; sourceTree = "<group>"; };
+		25C3801A1F144BF200142AE6 /* WemoScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WemoScanner.swift; sourceTree = "<group>"; };
+		25C3801B1F144BF200142AE6 /* WemoScannerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WemoScannerRequest.swift; sourceTree = "<group>"; };
+		25C380211F144C0900142AE6 /* WeMo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WeMo-Bridging-Header.h"; path = "WeMo/Supporting Files/WeMo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		25C380221F144C2400142AE6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Supporting Files/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		25C380241F144C2B00142AE6 /* SimulatedLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = SimulatedLocation.gpx; path = "Supporting Files/SimulatedLocation.gpx"; sourceTree = "<group>"; };
+		25C380261F144C3700142AE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		25C380281F144C3C00142AE6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Supporting Files/Constants.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0356393B1C2371B800525300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035639351C2371B800525300 = {
+			isa = PBXGroup;
+			children = (
+				035639401C2371B800525300 /* WeMo */,
+				0356393F1C2371B800525300 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0356393F1C2371B800525300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0356393E1C2371B800525300 /* WeMo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		035639401C2371B800525300 /* WeMo */ = {
+			isa = PBXGroup;
+			children = (
+				035639411C2371B800525300 /* AppDelegate.swift */,
+				25C37FF31F14498500142AE6 /* Home */,
+				25C37FF41F14498A00142AE6 /* Settings */,
+				25C37FFA1F1449EB00142AE6 /* Managers */,
+				25C37FF51F14498F00142AE6 /* Supporting Files */,
+			);
+			path = WeMo;
+			sourceTree = "<group>";
+		};
+		25C37FF31F14498500142AE6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				25C37FF61F14499600142AE6 /* Controller */,
+				25C37FF81F1449A000142AE6 /* View */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		25C37FF41F14498A00142AE6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				25C37FF71F14499A00142AE6 /* Controller */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		25C37FF51F14498F00142AE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25C37FFC1F144A2B00142AE6 /* Models */,
+				25C37FFB1F144A0300142AE6 /* Base.lproj */,
+				25C3800F1F144BF200142AE6 /* Wemo Scanner */,
+				25C380281F144C3C00142AE6 /* Constants.swift */,
+				25C380221F144C2400142AE6 /* UIViewController+Extensions.swift */,
+				25C380241F144C2B00142AE6 /* SimulatedLocation.gpx */,
+				25C380261F144C3700142AE6 /* Info.plist */,
+				25C380211F144C0900142AE6 /* WeMo-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25C37FF61F14499600142AE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25C37FFD1F144B9700142AE6 /* HomeTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		25C37FF71F14499A00142AE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25C380011F144BB400142AE6 /* SettingsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		25C37FF81F1449A000142AE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25C37FFF1F144B9E00142AE6 /* WemoDeviceCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		25C37FFA1F1449EB00142AE6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				25C380031F144BC100142AE6 /* LocationManager.swift */,
+				25C380041F144BC100142AE6 /* Utility.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		25C37FFB1F144A0300142AE6 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				25C380091F144BDB00142AE6 /* Assets.xcassets */,
+				25C3800B1F144BDB00142AE6 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			sourceTree = "<group>";
+		};
+		25C37FFC1F144A2B00142AE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25C380071F144BCD00142AE6 /* WemoDevice.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		25C3800F1F144BF200142AE6 /* Wemo Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				25C380101F144BF200142AE6 /* C Code */,
+				25C380191F144BF200142AE6 /* WemoConduit.swift */,
+				25C3801A1F144BF200142AE6 /* WemoScanner.swift */,
+				25C3801B1F144BF200142AE6 /* WemoScannerRequest.swift */,
+			);
+			name = "Wemo Scanner";
+			path = "Supporting Files/Wemo Scanner";
+			sourceTree = "<group>";
+		};
+		25C380101F144BF200142AE6 /* C Code */ = {
+			isa = PBXGroup;
+			children = (
+				25C380111F144BF200142AE6 /* if_arp.h */,
+				25C380121F144BF200142AE6 /* if_ether.h */,
+				25C380131F144BF200142AE6 /* if_types.h */,
+				25C380141F144BF200142AE6 /* MacAddressHelper.h */,
+				25C380151F144BF200142AE6 /* MacAddressHelper.m */,
+				25C380161F144BF200142AE6 /* route.h */,
+				25C380171F144BF200142AE6 /* SimplePing.h */,
+				25C380181F144BF200142AE6 /* SimplePing.m */,
+			);
+			path = "C Code";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0356393D1C2371B800525300 /* WeMo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035639501C2371B800525300 /* Build configuration list for PBXNativeTarget "WeMo" */;
+			buildPhases = (
+				0356393A1C2371B800525300 /* Sources */,
+				0356393B1C2371B800525300 /* Frameworks */,
+				0356393C1C2371B800525300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeMo;
+			productName = WeMo;
+			productReference = 0356393E1C2371B800525300 /* WeMo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		035639361C2371B800525300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kyle Blazier";
+				TargetAttributes = {
+					0356393D1C2371B800525300 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 63W44T26LS;
+						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 035639391C2371B800525300 /* Build configuration list for PBXProject "WeMo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 035639351C2371B800525300;
+			productRefGroup = 0356393F1C2371B800525300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0356393D1C2371B800525300 /* WeMo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0356393C1C2371B800525300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C3800E1F144BDB00142AE6 /* Main.storyboard in Resources */,
+				25C380251F144C2B00142AE6 /* SimulatedLocation.gpx in Resources */,
+				25C3800D1F144BDB00142AE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0356393A1C2371B800525300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C3801F1F144BF200142AE6 /* WemoScanner.swift in Sources */,
+				25C380201F144BF200142AE6 /* WemoScannerRequest.swift in Sources */,
+				25C380051F144BC100142AE6 /* LocationManager.swift in Sources */,
+				25C3801C1F144BF200142AE6 /* MacAddressHelper.m in Sources */,
+				25C3801E1F144BF200142AE6 /* WemoConduit.swift in Sources */,
+				25C380291F144C3C00142AE6 /* Constants.swift in Sources */,
+				25C380231F144C2400142AE6 /* UIViewController+Extensions.swift in Sources */,
+				25C380001F144B9E00142AE6 /* WemoDeviceCell.swift in Sources */,
+				25C380021F144BB400142AE6 /* SettingsViewController.swift in Sources */,
+				25C37FFE1F144B9700142AE6 /* HomeTableViewController.swift in Sources */,
+				25C380061F144BC100142AE6 /* Utility.swift in Sources */,
+				25C380081F144BCD00142AE6 /* WemoDevice.swift in Sources */,
+				035639421C2371B800525300 /* AppDelegate.swift in Sources */,
+				25C3801D1F144BF200142AE6 /* SimplePing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25C380091F144BDB00142AE6 /* Assets.xcassets */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C3800A1F144BDB00142AE6 /* Base */,
+			);
+			name = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		25C3800B1F144BDB00142AE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C3800C1F144BDB00142AE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0356394E1C2371B800525300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeMo/Supporting Files/WeMo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0356394F1C2371B800525300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeMo/Supporting Files/WeMo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		035639511C2371B800525300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 63W44T26LS;
+				INFOPLIST_FILE = "WeMo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleBlazier.WeMo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeMo/Supporting Files/WeMo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		035639521C2371B800525300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 63W44T26LS;
+				INFOPLIST_FILE = "WeMo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleBlazier.WeMo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeMo/Supporting Files/WeMo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035639391C2371B800525300 /* Build configuration list for PBXProject "WeMo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0356394E1C2371B800525300 /* Debug */,
+				0356394F1C2371B800525300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035639501C2371B800525300 /* Build configuration list for PBXNativeTarget "WeMo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035639511C2371B800525300 /* Debug */,
+				035639521C2371B800525300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 035639361C2371B800525300 /* Project object */;
+}
