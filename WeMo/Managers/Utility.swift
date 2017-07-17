@@ -52,7 +52,9 @@ class Utility {
                     return
                 }
                     
-                device.updateName(completion: { (_) -> () in
+                device.updateName(completion: { (name) -> () in
+                    
+                    guard let _ = name else {return}
                     
                     self.deviceScanDelegate?.wemoScannerDidDiscoverDevice(device)
                     

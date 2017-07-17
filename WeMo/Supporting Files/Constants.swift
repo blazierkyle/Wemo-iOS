@@ -15,16 +15,24 @@ class Constants {
 
     /*** 
         NOTE: Using hardcoded IP addresses since we are unable to 
-        scan to detect WeMo devices using WemoScanner classes. This
-        is a WORK IN PROGRESS and I'm unsure of how this will work
-        with multiple devices.
+        scan to detect WeMo devices using WemoScanner classes. Each
+        Wemo device you instantiate should have an IP address and port
+        in the format: "[IP-Address]:[Port Number]". Wemo devices have a
+        default port that you may use, or for use with multiple devices,
+        you must setup port forwarding on your router to configure a unique
+        TCP port for each Wemo device.
     ***/
     
     // Public IP Address (to connect to device outside of local network)
-    static let wemoDevicePublic1 = WemoDevice(ipAddress: "XXX.XXX.XXX.XX", macAddress: "XX:XX:XX:XX:XX:XX")
+
+    static let publicIPAddress = "XXX.XXX.XXX.XX"
+    
+    static let wemoDevicePublic1 = WemoDevice(ipAddress: "\(Constants.publicIPAddress):XXXX", macAddress: "XX:XX:XX:XX:XX:XX")
+    static let wemoDevicePublic2 = WemoDevice(ipAddress: "\(Constants.publicIPAddress):XXXX", macAddress: "XX:XX:XX:XX:XX:XX")
+
     
     // Array containing all of the WeMo devices
-    static let wemoDeviceArray = [Constants.wemoDevicePublic1]
+    static let wemoDeviceArray = [Constants.wemoDevicePublic1, Constants.wemoDevicePublic2]
     
     
     // MARK: - Constant Keys

@@ -48,6 +48,13 @@ class WemoDevice: NSObject {
 	
 	// MARK: -
     func determinePort(_ completion: ((_ error: Bool) -> ())?) {
+        
+        // Check if the IP address already contains a port - if so, skip this step
+        guard !ipAddress.contains(":") else {
+            completion?(false)
+            return
+        }
+        
 		let validPorts = [49154, 49152, 49153, 49155]
         
 		for port in validPorts {
@@ -64,10 +71,18 @@ class WemoDevice: NSObject {
 		}
 	}
 	
-	func updateName(completion: ((String) -> ())?) {
+	func updateName(completion: ((String?) -> ())?) {
 		assert(ipAddress != "")
 		WemoConduit.run(ipAddress, type: .getName, completion: {
 			response, error in
+            
+            // Check for errors
+            if let error = error {
+                print("** ERROR updating device name: \(error.localizedDescription)")
+                completion?(nil)
+                return
+            }
+            
 			if let responseString = response {
 				// Note: this is a terrible, hacky way to parse XML
                 
@@ -84,7 +99,7 @@ class WemoDevice: NSObject {
 				self.name = name
 				completion?(name)
 			} else {
-				completion?("")
+				completion?(nil)
 			}
 		})
 	}
