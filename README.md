@@ -11,9 +11,12 @@ This app can be used to manually control the switches or to setup a geofence aro
 To detect your device, you should enter the IP address and MAC address of your Wemo switch in the **Constants.swift** file. To add multiple devices, create more WemoDevice objects and add them to the data source array. NOTE: I have not yet tested this out with more than one switch, so I am unsure of this exact behavior (TODO).
 
 ``` swift
-    // Create a new device
-    static let wemoDevicePublic1 = WemoDevice(ipAddress: "XXX.XXX.XXX.XX", macAddress: "XX:XX:XX:XX:XX:XX")
-    static let wemoDevicePublic2 = WemoDevice(ipAddress: "XXX.XXX.XXX.XX", macAddress: "XX:XX:XX:XX:XX:XX")
+    // Add your public IP address
+    static let publicIPAddress = "XXX.XXX.XXX.XX"
+    
+    // Create new devices: replace the "XXXX" in the IP address with your device's port number (required with multiple switches being used or if you've setup custom port forwarding for your switch)
+    static let wemoDevicePublic1 = WemoDevice(ipAddress: "\(Constants.publicIPAddress):XXXX", macAddress: "XX:XX:XX:XX:XX:XX")
+    static let wemoDevicePublic2 = WemoDevice(ipAddress: "\(Constants.publicIPAddress):XXXX", macAddress: "XX:XX:XX:XX:XX:XX")
     
     // Add it to the wemoDeviceArray
     static let wemoDeviceArray = [Constants.wemoDevicePublic1, Constants.wemoDevicePublic2]
@@ -22,17 +25,17 @@ To detect your device, you should enter the IP address and MAC address of your W
 Once the device has been detected, you can turn it on or off from anywhere in the app (with a push notification to provide the user with feedback, or to notify them when this happens in the background, by using:
 
 ``` swift
-wemoDevice.turnOn(completion: { (success) in
+    wemoDevice.turnOn(completion: { (success) in
   
-  // Logic once the device is on
+        // Logic once the device is on
                 
-})
+    })
 
-wemoDevice.turnOff(completion: { (success) in
+    wemoDevice.turnOff(completion: { (success) in
                 
-  // Logic once the device is off
+        // Logic once the device is off
             
-})
+    })
 ```
 
 ## Motivation
